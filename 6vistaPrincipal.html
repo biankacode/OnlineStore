@@ -23,6 +23,63 @@
            margin: 0;
            font-family: 'Quicksand', sans-serif;
        }
+       .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 20px;
+            place-content: center;
+       }
+       .product-car{
+             width: 240px;
+
+       }
+       .product-car img{
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+       }
+       .product-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+       }
+       .product-info figure{
+        margin: 0%;
+       }
+       .product-info figure img{
+            width: 35px;
+            height: 35px;
+       }
+       .product-info div p:nth-child(1){
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0px;
+        margin-bottom: 4px;
+       }
+       .product-info div p:nth-child(2){
+        font-size: var(--sm);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: var(--very-ligth-pink);
+       }
+        @media (max-width: 640px) {
+        .cards-container{
+            grid-template-columns: repeat(auto-fill, 140px);
+        
+        }
+         .product-car{
+            width: 140px;
+
+       }
+        .product-car img{
+            width: 140px;
+            height: 140px;
+            
+       }
+       }
+       
     </style>
 </head>
     <body>
@@ -31,265 +88,275 @@
 
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
+                </div>
+
+
+                <div class="product-car">
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>  
                 </div>
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
+                </div>
+
+
+                <div class="product-car">
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>  
+                </div>
+
+
+                <div class="product-car">
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>  
+                </div>
+
+
+                <div class="product-car">
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>  
+                </div>
+
+
+                <div class="product-car">
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>  
+                </div>
+
+
+                <div class="product-car">
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>  
+                </div>
+
+
+                <div class="product-car">
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>  
+                </div>
+
+
+                <div class="product-car">
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
+                        <figure>
+                            <img src="./icons/bt_add_to_cart.svg" alt="">
+                        </figure>
+                    </div>  
                 </div>
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
+
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
+
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
+
 
                 <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
+                    <img src="https://images.pexels.com/photos/1715193/pexels-photo-1715193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="product">
+                    <div class="product-info">
+                        <div>
+                            <p> $ 120,00</p>
+                            <p>Motorcycle</p>
+                        </div>
                         <figure>
                             <img src="./icons/bt_add_to_cart.svg" alt="">
                         </figure>
-                    </div>
+                    </div>  
                 </div>
-
-                <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="./icons/bt_add_to_cart.svg" alt="">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="./icons/bt_add_to_cart.svg" alt="">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="./icons/bt_add_to_cart.svg" alt="">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="./icons/bt_add_to_cart.svg" alt="">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="./icons/bt_add_to_cart.svg" alt="">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="./icons/bt_add_to_cart.svg" alt="">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="./icons/bt_add_to_cart.svg" alt="">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="product-car">
-                    <img src="https://media.istockphoto.com/id/1211537276/es/foto/azul-moderno-motor-de-media-potencia-e-bicicleta-pedelec-con-motor-el%C3%A9ctrico-de-montaje-en-el.jpg?s=612x612&w=0&k=20&c=oyMuv3pYpc7Ed68qTW7yezhVAg4FX6_6T8CF1EIXGWk=" alt="" class="product">
-                    <div>
-                        <p>120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="./icons/bt_add_to_cart.svg" alt="">
-                        </figure>
-                    </div>
-                </div>
-
             </div>
         </section>
     </body>    
