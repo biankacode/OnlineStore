@@ -1,10 +1,12 @@
 const menuEmail = document.querySelector('.navar-email'); //seleccionar elemento al que le vamos a adr click
 const desktopMenu = document.querySelector('.desktop-menu');//llamamos al elemento que va a desaparecer
 const menuCarritoIcon = document.querySelector('.navbar-shoping-cart');//llamamos al elemento que va a desaparecer
+const productDetailIconClosed = document.querySelector('.producto-detail-close')
 const menuHamburgesa = document.querySelector('.menu');
 const mobileMenu= document.querySelector('.mobile-menu')
 const aside= document.querySelector('.product-detail')
 const cardsContainer = document.querySelector('.cards-container')
+const productDetailContainer = document.querySelector('#productDetail')
 
 
 
@@ -12,6 +14,7 @@ const cardsContainer = document.querySelector('.cards-container')
 menuEmail.addEventListener('click', toggleDesktopMenu); //que hacer cuando le den click
 menuHamburgesa.addEventListener('click', toggleMenuHamburgesa);
 menuCarritoIcon.addEventListener('click', toggleCarritoAside);
+productDetailIconClosed.addEventListener('click',closeProductDetailAside)
 
 function toggleDesktopMenu() { //funcion que hace desaparezca el menuDesktop
     const isAsideClosed = aside.classList.contains('inactive');
@@ -25,6 +28,8 @@ function toggleMenuHamburgesa() {
     if (!isAsideClosed) {
         aside.classList.add('inactive');
     }
+closeProductDetailAside();
+
     mobileMenu.classList.toggle('inactive');
 }
 function toggleCarritoAside() {
@@ -33,7 +38,24 @@ function toggleCarritoAside() {
     if (!isMobileMenuClosed) {
         mobileMenu.classList.add('inactive');
     }
+
+    const isProductDetailClosed = productDetailContainer.classList.contains('inactive'); // para cerrar el product detail cuando se abre el carrito de compras 
+
+    if (!isProductDetailClosed) {
+        productDetailContainer.classList.add('inactive');
+    }
+
     aside.classList.toggle('inactive');
+}
+
+
+function openProductDetailAside() {
+    aside.classList.add('inactive'); // abrir el aside si esta en el product detali
+
+    productDetailContainer.classList.remove('inactive') // abrir detall del producto
+} 
+function closeProductDetailAside() {
+    productDetailContainer.classList.add('inactive')// cerrar el detalle del producto
 }
 
 const productList = [];
@@ -88,7 +110,7 @@ function renderProducts(array) {
       
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image);
-        console.log("productImg", productImg)
+        productImg.addEventListener('click', openProductDetailAside);
 
         const productInfo = document.createElement('div');
         productInfo.classList.add('product-info');
